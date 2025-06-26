@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*nav-section */
+.nav-item .nav-link {
+  padding: 5px 36px;
+}
+.navbar-for-home {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  padding: 20px 15px;
+}
+/* Navbar styles when scrolled */
+.navbar-for-home.scrolled {
+  position: fixed;
+  background: #fff;
+  /* Change background color on scroll */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for better visibility */
+}
+/* Default styles for logo and navbar items */
+.navbar-for-home .nav-link,
+.navbar-for-home .contact-btn,
+.navbar-for-home .navbar-toggler,
+.sedin-salesforce-logo img.one-homepage {
+  color: #fff;
+  /* Default color for text (off-white) */
+  /* filter: brightness(0) invert(1); */
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar-nav .active > .nav-link {
+  color: grey;
+}
+.contact-btn {
+  border: 2px solid #0176d3;
+  color: #0176d3 !important;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+/* When navbar is scrolled */
+.navbar-for-home.scrolled .contact-btn,
+.navbar-for-home.scrolled .navbar-toggler,
+.navbar-for-home.scrolled .sedin-salesforce-logo img .one-homepage {
+  color: initial;
+  /* Use the original color */
+  filter: none;
+  /* Revert to the original color for the logo */
+}
+.navbar-for-home.scrolled .nav-link {
+  /* color: #afafaf; */
+  color: #000;
+  filter: none;
+  font-weight: 500;
+}
+.header-navbar .navbar-nav .nav-link {
+  color: #18181a;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -1.1px;
+}
+.container {
+  margin: 0 auto;
+  padding: 0px 24px;
+}
+
+/* Dropdown Styling */
+.dropdown-large {
+  /* min-width: 400px; */
+  border-radius: 8px;
+}
+
+.revamped-footer .custom-row {
+  padding: 20px 48px;
+}
+
+.dropdown-desc {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+/* Dropdown Menu - Adjust for Mobile */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  width: 800px;
+  max-width: 90vw;
+  /* Ensures it doesn’t get too wide on small screens */
+  overflow-y: auto;
+  /* Enables vertical scrolling if needed */
+  white-space: nowrap;
+  /* Prevents text wrapping */
+}
+
+/* Ensure smooth scrolling inside dropdown */
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  /* background-color: #007bff; */
+  border-radius: 5px;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover {
+  transition: 1s;
+}
+.nav-button {
+  border-radius: 4px;
+  color: #fff;
+  background-color: #0176d3;
+  padding: 8px 12px;
+  border-style: none;
+}
+
+/*text-lists*/
+.text-h1 {
+  color: var(--Grays-Black, #18181a);
+  font-family: Karla;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  letter-spacing: -3.2px;
+}
+.text-h2 {
+  color: #18181a;
+  /* Desktop/Heading/H1 */
+  font-family: Karla;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px; /* 118.519% */
+  letter-spacing: -2.7px;
+}
+.text-h3 {
+  font-family: Karla;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px; /* 135.714% */
+  letter-spacing: -0.84px;
+}
+.text-h4 {
+  color: var(--Grays-Black, #18181a);
+
+  /* Desktop/Heading/H3 */
+  font-family: Karla;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px; /* 135.714% */
+  letter-spacing: -0.84px;
+}
+.cmn-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+/*hero-sec */
+.hero-container {
+  padding-top: 9.25rem;
+  padding-bottom: 9.25rem;
+}
+
+.hero-btn {
+  border-radius: 100px;
+  background-color: #0176d3;
+  padding: 0px 12px;
+  color: #fff;
+  text-transform: uppercase;
+  border-style: none;
+}
+ .profile-hero {
+  padding-top: 5.5rem;
+}
+.container-hero {
+  padding-bottom: 6rem;
+}
+
+/*category-sec*/
+.category-btn {
+  /* border-radius: 50px;
+  border-style: none;
+  background-color: white;
+  color: #18181a;
+  padding: 0px 28px; */
+  border-radius: 100px;
+  border: 1px solid var(--Grays-Gray-02, #E0E3E4);
+  background: var(--Grays-White, #FFF);
+  padding: 4px 28px;  
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #18181A;
+}
+.category-btn:hover { 
+  background-color: #0176d3;
+  border-radius: 50px;
+  color: white;
+}
+/*saleforce organisation*/
+.saleforce-organisation {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image:url("assests-2/orgabisation\ dummy-pic.jpg");
+}
+.saleforce-btn {
+  border-radius: 10px;
+  background-color: #18181a;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 16px 32px;
+}
+.border-line{
+  border-top: 1px solid #EAECF0;
+}
+/*pagination*/
+.page-text{
+  color: #18181A;
+  font-family: Karla;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 145.455% */
+  letter-spacing: -0.44px;
+}
+/*pagination*/
+.card-title {
+  border-radius: 50px;
+  background-color: white;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+.card-text {
+  font-family: Karla;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  /* 135.714% */
+  letter-spacing: -0.84px;
+}
+.blog-outer {
+  padding-bottom: 2rem;
+}
+.blog-btn {
+  border-radius: 58px;
+  border: 1px solid #0176d3;
+  padding: 0px 12px;
+  text-transform: uppercase;
+  color: #0176d3;
+  background-color: white;
+  font-size: 14px;
+}
+@media screen and (max-width:600px) {
+  .card-text {
+      font-family: Karla;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 34px;
+      /* 135.714% */
+      letter-spacing: -0.84px;
+  }
+
+  .profile p {
+      color: #18181A;
+      font-family: Karla;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      /* 145.455% */
+      letter-spacing: -0.44px;
+  }
+}
+/*Responsiveness*/
+@media only screen and (max-width:768px) {
+  .hero-container {
+    padding-top: 6rem;
+    padding-bottom:3rem;
+  }
+  .cmn-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .hero-text .text-h3 {
+    color: #6e707e;
+    font-family: Karla;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: -2.6px;
+  }
+
+  .hero-text .text-h1 {
+    color: #18181a;
+    font-family: Karla;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -2.6px;
+  }
+  .right-text .text-h2 {
+    color: #18181a;
+    font-family: Karla;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -2.7px;
+    padding-bottom: 2rem;
+  }
+  .profile-hero{
+    padding-top: 0rem;
+  }
+  
+  .content-side .text-h2 {
+    color: #18181a;
+    /* Desktop/Heading/H1 */
+    font-family: Karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px; /* 118.519% */
+    letter-spacing: -2.7px;
+  }
+  .content .text-h2 {
+    color: #18181a;
+    font-family: Karla;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: -2.7px;
+  }
+  .card-text {
+    font-family: Karla;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px; /* 135.714% */
+    letter-spacing: -0.84px;
+  }
+}

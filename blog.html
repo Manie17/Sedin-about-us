@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedin-Blog</title>
+    <link rel="icon" href="Assests/core.svg">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-navbar">
+        <nav class="navbar navbar-for-home fixed-top navbar-expand-lg salesforce-header mt-0" id="myHeader">
+            <div class="container">
+                <div class="sedin-salesforce-logo">
+                    <a href="https://sedcloudcrm.com/">
+                        <img src="Assests/SedcloudCrm-logo.svg" class="img-fluid one-homepage" />
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://sedcloudcrm.com/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="servicesDropdown" aria-expanded="false"
+                                data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu shadow border-0">
+                                <div class="row custom-row">
+                                    <div class="col-md-6">
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Consulting & Strategy</p>
+                                                <p class="dropdown-desc">Connect to your warehouse</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Salesforce Implementation</p>
+                                                <p class="dropdown-desc">Optimize CRM for your business</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Data Migration & Management</p>
+                                                <p class="dropdown-desc">Seamless data transfer solutions</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Custom Development Services</p>
+                                                <p class="dropdown-desc">Tailor-made business solutions</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">AI & Automation</p>
+                                                <p class="dropdown-desc">Enhance efficiency with AI tools</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Cloud Solutions</p>
+                                                <p class="dropdown-desc">Scalable and secure cloud systems</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Enterprise Integration</p>
+                                                <p class="dropdown-desc">Seamless app & system integration</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Cybersecurity</p>
+                                                <p class="dropdown-desc">Advanced protection for your data</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="servicesDropdown" aria-expanded="false"
+                                data-bs-toggle="dropdown">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu shadow border-0">
+                                <div class="row custom-row">
+                                    <div class="col-md-6">
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Consulting & Strategy</p>
+                                                <p class="dropdown-desc">Connect to your warehouse</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Salesforce Implementation</p>
+                                                <p class="dropdown-desc">Optimize CRM for your business</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Data Migration & Management</p>
+                                                <p class="dropdown-desc">Seamless data transfer solutions</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Custom Development Services</p>
+                                                <p class="dropdown-desc">Tailor-made business solutions</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">AI & Automation</p>
+                                                <p class="dropdown-desc">Enhance efficiency with AI tools</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Cloud Solutions</p>
+                                                <p class="dropdown-desc">Scalable and secure cloud systems</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Enterprise Integration</p>
+                                                <p class="dropdown-desc">Seamless app & system integration</p>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-start" href="#">
+                                            <img src="/assets/images/revamped-homepage/nav-list-icon-1.svg"
+                                                class="nav-icon-svg" width="20">
+                                            <div>
+                                                <p class="nav-p1">Cybersecurity</p>
+                                                <p class="dropdown-desc">Advanced protection for your data</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Insights</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-button text text-decoration-none" href="contact-us.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--hero-->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="row">
+                <div class="hero-text">
+                    <p class="text-h3 pb-4 text-secondary">Blog</p>
+                    <h1 class="text-h1 pb-5">We help solve your most complex business problems at every level using
+                        Salesforce</h1>
+                </div>
+                <!--hero-left-->
+                <div class="col-lg-6">
+                    <div class="img-side">
+                        <img src="assests-2/hero-banner.png" alt="hero-banner" class="img-fluid">
+                    </div>
+                </div>
+                <!--hero-rigth-->
+                <div class="col-lg-6">
+                    <div class="content-side pt-3">
+                        <button class="hero-btn">saleforce integration</button>
+                        <h1 class="text-h2 pt-4 pb-3">Choosing the Right Cloud Consulting Company: A Decision-Making
+                            Guide</h1>
+                        <div class="d-flex align-items-center profile-hero gap-2">
+                            <img src="assests-2/hero-pf-img.svg" alt="Profile Image" class="me-2">
+                            <p class="mb-0 me-2 text-h3">Lorem Ipsum</p>
+                            <p class="mb-0 text-h3 fw-*300 text-secondary">5 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!--category-->
+    <section class="category">
+        <div class="container cmn-container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-14">
+                    <div class="right-text text-h2 my-3">
+                        Browse by category
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-5 col-sm-4">
+                    <div class="left-text">
+                        <div class="browse-buttons pb-3 d-flex gap-4 flex-wrap">
+                            <button class="category-btn">All</button>
+                            <button class="category-btn">Saleforce</button>
+                            <button class="category-btn">SalesCloud</button>
+                            <button class="category-btn">ServiceCloud</button>
+                            <button class="category-btn">Integration</button>
+                            <button class="category-btn">MarkettingCloud</button>
+                            <button class="category-btn">Implementation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--pagination part-->
+
+        <div class="container cmn-container pt-5">
+            <div id="blog-container" class="row"></div>
+
+            <nav>
+                <div class="border-line">
+                    
+                </div>
+                <ul class="pagination justify-content-center mt-4" id="pagination">
+                     
+                </ul>
+            </nav>
+        </div>
+        <script src="latest.js"> </script>
+    </section>
+
+    <!--unlock -sec-->
+    <section class="saleforce-organisation">
+        <div class="container cmn-container ">
+            <div class="row">
+                <div class="content pb-5">
+                    <h1 class="text-h2 text-white">Unlock the full potential of Salesforce
+                        for your organisation</h1>
+                    <div class="pt-4">
+                        <button class="saleforce-btn">talk to saleforce Expert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-sec-->
+    <section class="revamped-footer bg-dark">
+        <footer class="footer text-light">
+            <div class="container cmn-container">
+                <div class="row footer-grid">
+                    <!-- Left Section (Logo & Ratings) -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <img src="Assests/SedcloudCrm.svg" alt="" class="img-fluid pb-5">
+                        <img src="Assests/salesforce-clutch-1.svg" alt="" class="img-fluid pb-3">
+                        <div class="d-flex gap-3">
+                            <img src="Assests/PARTNER MSP 1.svg" alt="Salesforce Partner" width="60">
+                            <img src="Assests/Partner 2.svg" alt="Salesforce Ridge Partner" width="60">
+                            <img src="Assests/Partner 3.svg" alt="Pledge 1%" width="60">
+                        </div>
+                        <p class="mt-3"><img src="Assests/linkedin_logo.svg" alt="LinkedIn" width="80"></p>
+                    </div>
+
+                    <!-- About -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h5 class="r-footer-h5">About</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="revamped-footer-link text-decoration-none text-secondary">Our
+                                    Company</a>
+                            </li>
+                            <li><a href="#" class="revamped-footer-link text-decoration-none text-secondary">Blogs</a>
+                            </li>
+                            <li><a href="#" class="revamped-footer-link text-decoration-none text-secondary">Case
+                                    Studies</a>
+                            </li>
+                            <li><a href="#" class="revamped-footer-link text-decoration-none text-secondary">Contact
+                                    us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="r-footer-h5">Services</h5>
+                        <ul class="list-unstyled">
+                            <li><a target="_parent" href="/services/salesforce-consulting-services.html"
+                                    class="revamped-footer-link text-decoration-none text-secondary">Consulting</a></li>
+                            <li><a target="_parent" href="/services/salesforce-implementation-services.html"
+                                    class="revamped-footer-link text-decoration-none text-secondary">Salesforce
+                                    Implementation</a>
+                            </li>
+                            <li><a target="_parent" href="/services/custom-salesforce-development-services.html"
+                                    class="revamped-footer-link text-decoration-none text-secondary">Development &
+                                    Customization</a></li>
+                            <li><a target="_parent" href="/services/salesforce-support-and-maintenance-services.html"
+                                    class="revamped-footer-link text-decoration-none text-secondary">Admin Support &
+                                    Maintenance</a></li>
+                            <li><a target="_parent" href="/services/salesforce-data-migration-services.html"
+                                    class="revamped-footer-link text-decoration-none text-secondary">Lightning
+                                    Migration</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="r-footer-h5">Platform</h5>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <ul class="list-unstyled">
+                                    <li><a target="_parent" href="/platform/salesforce-sales-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Sales
+                                            Cloud</a>
+                                    </li>
+                                    <li><a target="_parent" href="/platform/salesforce-service-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Services
+                                            Cloud</a>
+                                    </li>
+                                    <li><a target="_parent" href="/platform/salesforce-marketing-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Marketing
+                                            Cloud</a>
+                                    </li>
+                                    <li><a target="_parent" href="/platform/salesforce-pardot-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Pardot</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <ul class="list-unstyled">
+                                    <li><a target="_parent" href="/platform/salesforce-financial-service-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Finance
+                                            Cloud</a>
+                                    </li>
+                                    <li><a target="_parent" href="/platform/salesforce-pardot-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Data
+                                            Cloud</a>
+                                    </li>
+                                    <li><a target="_parent" href="/platform/salesforce-pardot-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Commerce
+                                            Cloud</a>
+                                    </li>
+                                    <li><a target="_parent" href="/platform/salesforce-pardot-cloud.html"
+                                            class="revamped-footer-link text-decoration-none text-secondary">Integration
+                                            Cloud</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Footer -->
+                <hr class="border-light">
+                <div class="d-flex justify-content-between align-items-center flex-wrap r-footer-grid">
+                    <p class="r-footer-p1">©
+                        <script type="text/javascript">
+                            var year = new Date();
+                            document.write(year.getFullYear());
+                        </script>
+                        <a class="footer-web text-decoration-none text-white"
+                            href="https://sedintechnologies.com/">Sedin Technologies Inc</a>
+                    </p>
+                    <p class="r-footer-p1">
+                        <a href="#" class="text-light text-decoration-none">Terms & Conditions</a> |
+                        <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

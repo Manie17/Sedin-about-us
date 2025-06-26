@@ -1,0 +1,446 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Karla", serif;
+}
+/*nav-section */
+.nav-item .nav-link {
+   padding: 5px 36px;
+}
+.navbar-for-home {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   z-index: 10;
+   background: transparent;
+   transition: all 0.3s ease-in-out;
+   padding: 20px 15px;
+}
+/* Navbar styles when scrolled */
+.navbar-for-home.scrolled {
+   position: fixed;
+   background: #fff;
+   /* Change background color on scroll */
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   /* Optional shadow for better visibility */
+}
+/* Default styles for logo and navbar items */
+.navbar-for-home .nav-link,
+.navbar-for-home .contact-btn,
+.navbar-for-home .navbar-toggler,
+.sedin-salesforce-logo img.one-homepage {
+   color: #fff;
+   /* Default color for text (off-white) */
+   /* filter: brightness(0) invert(1); */
+   transition: all 0.3s ease-in-out;
+   font-weight: 500;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.navbar-nav .active>.nav-link {
+   color: grey;
+}
+.contact-btn {
+   border: 2px solid #0176d3;
+   color: #0176d3 !important;
+   border-radius: 5px;
+   margin-left: 10px;
+}
+/* When navbar is scrolled */
+.navbar-for-home.scrolled .contact-btn,
+.navbar-for-home.scrolled .navbar-toggler,
+.navbar-for-home.scrolled .sedin-salesforce-logo img .one-homepage {
+   color: initial;
+   /* Use the original color */
+   filter: none;
+   /* Revert to the original color for the logo */
+}
+.navbar-for-home.scrolled .nav-link {
+   /* color: #afafaf; */
+   color: #000;
+   filter: none;
+   font-weight: 500;
+}
+.header-navbar .navbar-nav .nav-link {
+   color: #18181A;
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 30px;
+   letter-spacing: -1.1px;
+}
+.container {
+   margin: 0 auto;
+   padding: 0px 24px;
+}
+
+/* Dropdown Styling */
+.dropdown-large {
+   /* min-width: 400px; */
+   border-radius: 8px;
+}
+
+.revamped-footer .custom-row {
+   padding: 20px 48px;
+}
+
+.dropdown-desc {
+   font-size: 12px;
+   color: #666;
+   margin: 0;
+}
+
+/* Dropdown Menu - Adjust for Mobile */
+.dropdown-menu {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   display: none;
+   background-color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 10px;
+   border-radius: 5px;
+   width: 800px;
+   max-width: 90vw;
+   /* Ensures it doesn’t get too wide on small screens */
+   overflow-y: auto;
+   /* Enables vertical scrolling if needed */
+   white-space: nowrap;
+   /* Prevents text wrapping */
+}
+
+/* Ensure smooth scrolling inside dropdown */
+.dropdown-menu::-webkit-scrollbar {
+   width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+   /* background-color: #007bff; */
+   border-radius: 5px;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown-menu {
+   display: block;
+}
+
+.dropdown:hover {
+   transition: 1s;
+}
+
+/*text-list*/
+
+.text-h2 {
+   color: #18181A;
+   font-family: Karla;
+   font-size: 54px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 64px;
+   /* 118.519% */
+   letter-spacing: -2.7px;
+}
+.text-p1 {
+   color: #6E707E;
+   font-family: Karla;
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 38px;
+   /* 135.714% */
+   letter-spacing: -0.84px;
+}
+.text-p2 {
+   color: #6E707E;
+   text-align: center;
+   font-family: Karla;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 28px;
+   /* 155.556% */
+   letter-spacing: -0.36px;
+}
+.card-h {
+   color: var(--Grays-Black, #18181A);
+   text-align: center;
+   font-family: Karla;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 34px;
+   /* 141.667% */
+   letter-spacing: -0.48px;
+}
+.card-p {
+   color: #6E707E;
+   text-align: center;
+   font-family: Karla;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   /* 155.556% */
+   letter-spacing: -0.36px;
+}
+.star-text {
+   color: #FFF;
+   font-family: Karla;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 54px;
+   /* 135% */
+   letter-spacing: -1.6px;
+}
+.cmn-container{
+   padding: 6.5rem 1.5rem;
+}
+/*hero-sec*/
+.hero-container {
+   padding-top: 9.25rem;
+   padding-bottom:9.25rem;
+}
+.hero-sec .text-h1 {
+   color: #6E707E;
+   font-family: Karla;
+   font-size: 64px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 82px;
+   letter-spacing: -3.2px;
+}
+.hero-sec .hero-span {
+   color: #18181A;
+   font-family: Karla;
+   font-size: 72px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 82px;
+   /* 113.889% */
+   letter-spacing: -3.6px;
+}
+.hero-para {
+   padding-top: 9rem;
+   padding-bottom: 3rem;
+}
+.hero-button {
+   border-radius: 4px;
+   color: #FFF;
+   background-color: #0176D3;
+   padding: 8px 12px;
+   border-style: none;
+}
+/*stats*/
+.stats-num{
+   margin-right: 50px;
+}
+/*indus-expert*/
+.indus-expert h1 {
+   padding-bottom: 7.5rem;
+}
+/*team members*/
+.team-members {
+   background-color: #f8f9fa;
+}
+.card-border {
+   border-radius: 16px;
+   border: 1px solid var(--Gray-50, #F5F6F7);
+   background: var(--Gray-00, #FFF);
+}
+.card-footer {
+   border-bottom: 10px;
+   background-color: white;
+}
+.linked-in {
+   padding: 12px;
+   gap: 10px;
+   border-radius: 4px;
+   opacity: 0px;
+   background-color: #0A66C2;
+   border-style: none;
+}
+/*hiring sec*/
+.Hiring-sec {
+   background-color: #18181A;
+}
+.container-hire {
+   padding-top: 6rem;
+   padding-right: 7rem;
+   padding-bottom: 6rem;
+   padding-left: 7rem;
+}
+.hire-btn {
+   background-color: #18181A;
+   border-radius: 8px;
+   text-transform: uppercase;
+   padding: 16px 32px 16px 32px;
+   color: white;
+}
+.profile {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   align-self: stretch;
+   gap:1rem;
+}
+.profile-symbol {
+   color: white;
+   background-color: #0A66C2;
+   width: 40px;
+   height: 40px;
+   border-radius: 54px;
+   font-size: 22px;
+   font-family: Nunito Sans;
+   font-weight: 600;
+   word-wrap: break-word;
+   position: relative;
+}
+.profile-images {
+   position: relative; 
+   display: flex; 
+}
+.profile-img {
+   position: relative;
+   width: 55px;
+   margin-left: -15px; 
+   z-index: 1; 
+   border-radius: 50%; 
+}
+.profile-img:nth-child(1) {
+   z-index:1;
+}
+.profile-img:nth-child(2) {
+   z-index:2;
+}
+.profile-img:nth-child(3) {
+   z-index:3;
+}
+.profile-img:nth-child(4) {
+   z-index:4;
+}
+/*footer*/
+.list-unstyled li a {
+   color: #9295A5;
+}
+.revamped-footer {
+   background-color: #18181A;
+}
+/*carousel */
+.carousel-profile{
+   padding: 70px 15px;
+} .carousel-control-prev-icon
+.carousel-control-next-icon {
+   outline: none;
+   box-shadow: none;
+} 
+ .carousel-control-prev-icon {
+   background-image: url("assests-2/arrow-left-square.svg")
+}
+.carousel-control-next-icon{
+   background-image: url("assests-2/arrow-right-square.svg")
+} 
+.carousel-inner {
+   min-height: 350px; /* Adjust as needed */
+}
+.carousel-item {
+   min-height: 350px; /* Ensures each slide is the same height */
+}
+.card-footer {
+   padding-top: 10px; /* Remove `pt-5` variations */
+}
+.team-img{
+   padding: 1rem 5rem;
+}
+/*responsive*/
+@media only screen and (max-width:768px) {
+
+   .hero-sec .text-h1 {
+      color: #6E707E;
+      font-family: Karla;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 54px;
+      letter-spacing: -2.6px;
+   }
+
+   .hero-sec .hero-span {
+      color: #18181A;
+      font-family: Karla;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 54px;
+      letter-spacing: -2.6px;
+   }
+
+   .hero-para {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+   }
+
+   .together h1 {
+      color: #18181A;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48px;
+   }
+
+   .feedback-cli .text-h2 {
+      color: #18181A;
+      font-size: 38px;
+      line-height: 48px;
+      font-weight: 500;
+      letter-spacing: -2px;
+   }
+
+   .indus-expert h1 {
+      padding-bottom: 3rem;
+      font-size: 44px;
+      line-height: 54px;
+      font-weight: 500;
+      font-family: karla;
+   }
+
+   .together-p p {
+      color: #6E707E;
+      font-family: Karla;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px;
+      letter-spacing: -0.84px;
+   }
+
+   .feedback-cli {
+      color: #18181A;
+      font-family: Karla;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 54px;
+      letter-spacing: -2.7px;
+   }
+
+   .head-team .text-h2 {
+      color: #18181A;
+      font-family: Karla;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 48px;
+      letter-spacing: -2.7px;
+   }
+
+   .head-team .text-p1 {
+      color: #6E707E;
+      font-family: Karla;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: -0.84px;
+   }
+} 
